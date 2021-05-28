@@ -1,0 +1,27 @@
+.note {
+  margin: 25px 20px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border: 1px solid black;
+  min-width: 250px;
+}
+
+span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span h2 {
+  margin: 0;
+}
+
+span .icon {
+  color: red;
+  cursor: pointer
+}
+
+p {
+  margin: 0;
+  padding: 5px 0;
+}
