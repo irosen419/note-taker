@@ -1,1 +1,2 @@
-<button class="btn">Add</button>
+<button class="btn" (click)="onClick()" [ngStyle]="{'background': showAddNote ? 'red' : 'green'}">{{showAddNote ?
+  'Close' : 'Add'}}</button>

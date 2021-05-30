@@ -1,3 +1,5 @@
+<app-new-note (formSubmit)="addNote($event)"></app-new-note>
 <div class="notes">
-  <app-note *ngFor="let note of notes" [note]="note" (deleteNote)="onDeleteNote(note)"></app-note>
+  <app-note *ngFor="let note of notes" [note]="note" (deleteNote)="onDeleteNote(note)" (dblclick)="toggleNote(note)">
+  </app-note>
 </div>

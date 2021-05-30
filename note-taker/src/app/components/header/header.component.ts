@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private uiService: UiService) { }
 
   ngOnInit(): void {
+  }
+
+  toggleAddNote(): void {
+    this.uiService.toggleAddNote()
   }
 
 }

@@ -1,4 +1,4 @@
-<div class="note">
+<div class="{{note.priority ? 'note priority' : 'note'}}">
   <span>
     <h2>{{note.title}}</h2>
     <fa-icon [icon]="faTimes" class="icon" (click)="onDelete()"></fa-icon>

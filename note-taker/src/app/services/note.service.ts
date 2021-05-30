@@ -23,4 +23,12 @@ export class NoteService {
   deleteNote(note: Note): Observable<Note> {
     return this.http.delete<Note>(`${this.apiUrl}/${note.id}`)
   }
+
+  updateNote(note: Note): Observable<Note> {
+    return this.http.patch<Note>(`${this.apiUrl}/${note.id}`, note, this.httpOptions)
+  }
+
+  postNote(note: Note): Observable<Note> {
+    return this.http.post<Note>(this.apiUrl, note, this.httpOptions)
+  }
 }

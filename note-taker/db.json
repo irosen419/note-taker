@@ -3,17 +3,32 @@
     {
       "id": 0,
       "title": "My first note",
-      "content": "This is my first note!"
+      "content": "This is my first note!",
+      "priority": true
     },
     {
       "id": 1,
       "title": "My second note",
-      "content": "This is my second note!"
+      "content": "This is my second note!",
+      "priority": false
     },
     {
       "id": 2,
       "content": "This is my third note!",
-      "title": "My third note"
+      "title": "My third note",
+      "priority": true
+    },
+    {
+      "title": "My fourth note",
+      "content": "This is my fourth note!",
+      "priority": true,
+      "id": 3
+    },
+    {
+      "title": "My fifth note",
+      "content": "This is my fifth note!",
+      "priority": false,
+      "id": 4
     }
   ]
 }
